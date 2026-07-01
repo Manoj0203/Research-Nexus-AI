@@ -5,24 +5,23 @@ import {
     TouchableOpacity,
     StyleSheet,
 } from 'react-native';
-import DocumentPicker from 'react-native-document-picker';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default function DropPDF() {
     const [fileName, setFileName] = useState('');
 
     const pickPDF = async () => {
-        try {
-            const res = await DocumentPicker.pickSingle({
-                type: [DocumentPicker.types.pdf],
-            });
+        // try {
+        //     const res = await DocumentPicker.pickSingle({
+        //         type: [DocumentPicker.types.pdf],
+        //     });
 
-            setFileName(res.name);
-        } catch (err) {
-            if (!DocumentPicker.isCancel(err)) {
-                console.log(err);
-            }
-        }
+        //     setFileName(res.name);
+        // } catch (err) {
+        //     if (!DocumentPicker.isCancel(err)) {
+        //         console.log(err);
+        //     }
+        // }
     };
 
     return (

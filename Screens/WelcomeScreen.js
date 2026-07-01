@@ -83,7 +83,7 @@ export default function WelcomeScreen() {
                 <Text style={styles.titlePurple}>Paper Companion</Text>
 
                 <Text style={styles.subtitle}>
-                    {user?.email}
+                    Your Intelligent Academic
                 </Text>
                 <Text style={styles.subtitle}>
                     Research Assistant

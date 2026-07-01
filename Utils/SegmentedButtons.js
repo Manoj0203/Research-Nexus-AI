@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
 
   activeButton: {
-    backgroundColor: '#6D28D9',
+    backgroundColor: '#5B2DD8',
   },
 
   text: {
