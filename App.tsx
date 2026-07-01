@@ -1,0 +1,31 @@
+import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import { SafeAreaProvider, } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { PaperProvider } from 'react-native-paper';
+
+import WelcomeScreen from './Screens/WelcomeScreen';
+import TabManagement from './Screens/TabManagement';
+import UploadPaper from './Screens/UploadPaper';
+
+const Stack = createNativeStackNavigator();
+
+function App() {
+  const isDarkMode = useColorScheme() === 'dark';
+
+  return (
+    <PaperProvider>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="Welcome"
+          screenOptions={{ headerShown: false }}
+        >
+          <Stack.Screen name="Welcome" component={WelcomeScreen} />
+          <Stack.Screen name="Tab" component={TabManagement} />
+          <Stack.Screen name="Upload" component={UploadPaper} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </PaperProvider>
+  );
+}
+export default App;
