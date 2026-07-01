@@ -78,3 +78,4 @@ yarn-error.log
 **/google-services.json
 **/GoogleService-Info.plist
 Services/fireaseAuth.js
+**/fireaseAuth.js
