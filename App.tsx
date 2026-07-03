@@ -8,6 +8,7 @@ import SplashScreen from './Screens/SplashScreen';
 import WelcomeScreen from './Screens/WelcomeScreen';
 import TabManagement from './Screens/TabManagement';
 import UploadPaper from './Screens/UploadPaper';
+import AboutScreen from './Screens/AboutScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,7 @@ function App() {
           <Stack.Screen name="Welcome" component={WelcomeScreen} />
           <Stack.Screen name="Tab" component={TabManagement} />
           <Stack.Screen name="Upload" component={UploadPaper} />
+          <Stack.Screen name="About" component={AboutScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>

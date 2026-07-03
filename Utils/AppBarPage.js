@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
         color: '#FFF',
         fontSize: 20,
         fontWeight: '600',
+        marginLeft: 15
     },
 
     placeholder: {

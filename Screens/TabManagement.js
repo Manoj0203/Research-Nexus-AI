@@ -56,7 +56,6 @@ export default function TabManagement() {
                 },
                 tabBarActiveTintColor: '#8e64ff',
                 tabBarInactiveTintColor: '#7e7e7eff',
-                tabBarShowLabel: false,
                 tabBarStyle: { height: '6%', backgroundColor: bgcolor, alignItems:'center', alignSelf:'center', justifyContent:'center' }
             })}>
                 <Tab.Screen name="Home" component={HomeScreen} />

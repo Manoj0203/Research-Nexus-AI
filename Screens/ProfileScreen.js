@@ -1,15 +1,18 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
+import Feather from 'react-native-vector-icons/Feather';
+import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
+import { Divider } from 'react-native-paper';
+import { useNavigation } from '@react-navigation/native';
 
 import AppBar from '../Utils/AppBar';
 import ProfileCard from '../Utils/ProfileCard';
 import LogoutButton from '../Utils/LogoutButton';
 
-import Feather from 'react-native-vector-icons/Feather';
-import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
-import { Divider } from 'react-native-paper';
-
 const ProfileScreen = () => {
+
+	const navi = useNavigation();
+
 	return (
 		<>
 			<AppBar title={'Profile'} />
@@ -49,7 +52,7 @@ const ProfileScreen = () => {
 
 					<Divider style={{ backgroundColor: 'grey' }} />
 
-					<TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
+					<TouchableOpacity onPress={() => navi.navigate('About')} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
 						<View style={{ paddingHorizontal: '4%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
 							<Feather name="info" size={24} color="#d6d6d6" />
 							<Text style={{ color: '#FFF', fontSize: 15 }}>About</Text>
