@@ -56,7 +56,7 @@ const HelpAndSupportScreen = () => {
                     {/* Getting Started */}
                     <TouchableOpacity onPress={null} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
                         <View style={{ paddingHorizontal: '2%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-                            <Ionicons name="rocket-outline" size={22} color="#d6d6d6" />
+                            <Ionicons name="rocket-outline" size={22} color="#CFCFFF" />
                             <View>
                                 <Text style={{ color: '#FFF', fontSize: 15 }}>Getting Started</Text>
                                 <Text style={{ color: 'grey' }}>Learn the basics of the App</Text>
@@ -69,7 +69,7 @@ const HelpAndSupportScreen = () => {
 
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
                         <View style={{ paddingHorizontal: '2%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-                            <Feather name="file" size={24} color="#d6d6d6" />
+                            <Feather name="file" size={24} color="#CFCFFF" />
                             <View>
                                 <Text style={{ color: '#FFF', fontSize: 15 }}>Upload and Manage Papers</Text>
                                 <Text style={{ color: 'grey' }}>How to upload papers?</Text>
@@ -82,7 +82,7 @@ const HelpAndSupportScreen = () => {
 
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
                         <View style={{ paddingHorizontal: '2%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-                            <Ionicons name="sparkles-outline" size={22} color="#d6d6d6" />
+                            <Ionicons name="sparkles-outline" size={22} color="#CFCFFF" />
                             <View>
                                 <Text style={{ color: '#FFF', fontSize: 15 }}>AI Feature</Text>
                                 <Text style={{ color: 'grey' }}>Summaries, chat, and insights</Text>
@@ -101,7 +101,7 @@ const HelpAndSupportScreen = () => {
                     {/* Support */}
                     <TouchableOpacity onPress={openEmail} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
                         <View style={{ paddingHorizontal: '2%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-                            <Feather name="mail" size={22} color="#d6d6d6" />
+                            <Feather name="mail" size={22} color="#CFCFFF" />
                             <View>
                                 <Text style={{ color: '#FFF', fontSize: 15 }}>Contact Us</Text>
                                 <Text style={{ color: 'grey' }}>nmanoj0212@gmail.com</Text>
@@ -114,7 +114,7 @@ const HelpAndSupportScreen = () => {
 
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
                         <View style={{ paddingHorizontal: '2%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-                            <Ionicons name="warning-outline" size={24} color="#d6d6d6" />
+                            <Ionicons name="warning-outline" size={24} color="#CFCFFF" />
                             <View>
                                 <Text style={{ color: '#FFF', fontSize: 15 }}>Report an Issue</Text>
                                 <Text style={{ color: 'grey' }}>Let us know what went wrong</Text>
@@ -127,7 +127,7 @@ const HelpAndSupportScreen = () => {
 
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
                         <View style={{ paddingHorizontal: '2%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-                            <FontAwesome6 name="lightbulb" size={24} color="#d6d6d6" />
+                            <FontAwesome6 name="lightbulb" size={24} color="#CFCFFF" />
                             <View>
                                 <Text style={{ color: '#FFF', fontSize: 15 }}>Feature Request</Text>
                                 <Text style={{ color: 'grey' }}>Suggest new features</Text>

@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native';
 
 import Feather from 'react-native-vector-icons/Feather';
 
@@ -7,6 +8,8 @@ const AppBar = ({
     title,
     style
 }) => {
+
+    const navi = useNavigation();
 
     const renderRightIocn = () => {
         switch (title) {
@@ -25,7 +28,7 @@ const AppBar = ({
 
             case 'Profile':
                 return (
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navi.navigate('Settings')} >
                         <Feather name="settings" size={24} color="white" />
                     </TouchableOpacity>
                 )

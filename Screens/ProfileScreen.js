@@ -25,7 +25,7 @@ const ProfileScreen = () => {
 				<View style={{ backgroundColor: '#17004a97', borderRadius: 15, }}>
 					<TouchableOpacity onPress={() => navi.navigate('Library')} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
 						<View style={{ paddingHorizontal: '4%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-							<FontAwesome6 name="file-pdf" size={19} color="#d6d6d6" />
+							<FontAwesome6 name="file-pdf" size={19} color="#CFCFFF" />
 							<Text style={{ color: '#FFF', fontSize: 15 }}>My Paper</Text>
 						</View>
 						<Feather name="chevron-right" size={24} color="#FFF" />
@@ -33,9 +33,9 @@ const ProfileScreen = () => {
 
 					<Divider style={{ backgroundColor: 'grey' }} />
 
-					<TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
+					<TouchableOpacity onPress={() => navi.navigate('Settings')} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
 						<View style={{ paddingHorizontal: '4%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-							<Feather name="settings" size={22} color="#d6d6d6" />
+							<Feather name="settings" size={22} color="#CFCFFF" />
 							<Text style={{ color: '#FFF', fontSize: 15 }}>Settings</Text>
 						</View>
 						<Feather name="chevron-right" size={24} color="#FFF" />
@@ -45,7 +45,7 @@ const ProfileScreen = () => {
 
 					<TouchableOpacity onPress={() => navi.navigate('HelpandSupport')} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
 						<View style={{ paddingHorizontal: '4%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-							<Feather name="help-circle" size={24} color="#d6d6d6" />
+							<Feather name="help-circle" size={24} color="#CFCFFF" />
 							<Text style={{ color: '#FFF', fontSize: 15 }}>Help & Support</Text>
 						</View>
 						<Feather name="chevron-right" size={24} color="#FFF" />
@@ -55,7 +55,7 @@ const ProfileScreen = () => {
 
 					<TouchableOpacity onPress={() => navi.navigate('About')} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: '2.5%' }}>
 						<View style={{ paddingHorizontal: '4%', paddingVertical: '3.5%', flexDirection: 'row', alignItems: 'center', gap: 15 }}>
-							<Feather name="info" size={24} color="#d6d6d6" />
+							<Feather name="info" size={24} color="#CFCFFF" />
 							<Text style={{ color: '#FFF', fontSize: 15 }}>About</Text>
 						</View>
 						<Feather name="chevron-right" size={24} color="#FFF" />

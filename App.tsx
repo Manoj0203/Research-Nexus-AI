@@ -10,6 +10,7 @@ import TabManagement from './Screens/TabManagement';
 import UploadPaper from './Screens/UploadPaper';
 import AboutScreen from './Screens/AboutScreen';
 import HelpAndSupportScreen from './Screens/HelpAndSupportScreen';
+import SettingsScreen from './Screens/SettingsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,7 @@ function App() {
           <Stack.Screen name="Upload" component={UploadPaper} />
           <Stack.Screen name="About" component={AboutScreen} />
           <Stack.Screen name='HelpandSupport' component={HelpAndSupportScreen} />
+          <Stack.Screen name='Settings' component={SettingsScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>

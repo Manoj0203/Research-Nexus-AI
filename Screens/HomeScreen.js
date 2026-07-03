@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
+import { FlashList } from "@shopify/flash-list";
 
 import auth from '../Services/firebaseAuth';
 
@@ -16,8 +17,29 @@ const HomeScreen = () => {
 
     const [search, setSearch] = useState('');
 
+    const DATA = [
+        {
+            title: "First Item",
+        },
+        {
+            title: "Second Item",
+        },
+
+    ];
+
     const handleSearch = () => {
         console.log(search);
+    };
+
+    const renderRecentPaper = ({ item }) => {
+        return (
+            <View
+                style={styles.recentCard}>
+                <Text style={{ color: 'white', fontSize: 16 }}>
+                    {item.title}
+                </Text>
+            </View>
+        );
     };
 
     return (
@@ -61,6 +83,14 @@ const HomeScreen = () => {
                     <Text style={{ color: '#8e64ff', fontSize: 15, }}>View all</Text>
                 </TouchableOpacity>
             </View>
+            <View style={{ backgroundColor: '#0b0023', flex: 1, justifyContent: 'flex-end' }}>
+                <FlashList
+                    style={{ backgroundColor: '#0b0023', }}
+                    data={DATA.slice(0, 5)}
+                    showsVerticalScrollIndicator={true}
+                    renderItem={renderRecentPaper}
+                />
+            </View>
         </>
     )
 }
@@ -96,4 +126,11 @@ const styles = StyleSheet.create({
         fontSize: 14,
         marginTop: 3,
     },
+    recentCard: {
+        backgroundColor: '#17004a97',
+        padding: 16,
+        marginHorizontal: '4%',
+        marginVertical: '2%',
+        borderRadius: 12,
+    }
 });
