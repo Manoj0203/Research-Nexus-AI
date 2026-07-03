@@ -9,6 +9,7 @@ import WelcomeScreen from './Screens/WelcomeScreen';
 import TabManagement from './Screens/TabManagement';
 import UploadPaper from './Screens/UploadPaper';
 import AboutScreen from './Screens/AboutScreen';
+import HelpAndSupportScreen from './Screens/HelpAndSupportScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +28,7 @@ function App() {
           <Stack.Screen name="Tab" component={TabManagement} />
           <Stack.Screen name="Upload" component={UploadPaper} />
           <Stack.Screen name="About" component={AboutScreen} />
+          <Stack.Screen name='HelpandSupport' component={HelpAndSupportScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>

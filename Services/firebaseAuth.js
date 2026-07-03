@@ -10,12 +10,12 @@ import { getStorage } from 'firebase/storage';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzsD3siY4xA",
-  authDomain: "researeapp.com",
-  projectId: "res",
-  storageBucket: "res.app",
-  messagingSenderId: "963",
-  appId: "1:cd7024226"
+  apiKey: "AIzaSyCFNlxehHEUJKYqKzQnBTRtB4sD3siY4xA",
+  authDomain: "research-nexus-ai.firebaseapp.com",
+  projectId: "research-nexus-ai",
+  storageBucket: "research-nexus-ai.firebasestorage.app",
+  messagingSenderId: "961199237843",
+  appId: "1:961199237843:web:bdff6f1b2561bcd7024226"
 };
 
 // Initialize Firebase

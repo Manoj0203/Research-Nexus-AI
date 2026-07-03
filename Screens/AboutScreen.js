@@ -6,8 +6,7 @@ import AppBarPage from '../Utils/AppBarPage';
 import Feather from 'react-native-vector-icons/Feather';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Octicons from 'react-native-vector-icons/Octicons';
-import { Goal } from 'lucide-react-native';
-import { Users2 } from 'lucide-react-native';
+import { Goal, Users2 } from 'lucide-react-native';
 
 const AboutScreen = () => {
 
@@ -27,7 +26,7 @@ const AboutScreen = () => {
         <>
             <AppBarPage title='About' />
 
-            <ScrollView style={{ backgroundColor: '#0b0023', paddingBottom: '2.5%' }}>
+            <ScrollView showsVerticalScrollIndicator={false} style={{ backgroundColor: '#0b0023', paddingBottom: '2.5%' }}>
                 {/* Image */}
                 <View style={{ backgroundColor: '#0b0023', alignItems: 'center', paddingVertical: '2.5%' }}>
                     <Image
@@ -96,7 +95,6 @@ const AboutScreen = () => {
                     <View style={styles.partContainer}>
                         <View style={{ flexDirection: 'row', gap: 10, paddingVertical: '2.5%', paddingHorizontal: '4%', alignItems: 'center' }}>
                             <Octicons name="terminal" size={24} color="#8e64ff" />
-                            {/* <Icon name="terminal" size={22} color="#8e64ff" /> */}
                             <Text style={{ color: '#8e64ff', fontSize: 17 }}>Technology Behind</Text>
                         </View>
                         <View style={styles.tagsContainer}>

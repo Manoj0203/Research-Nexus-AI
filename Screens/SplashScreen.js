@@ -20,6 +20,7 @@ const SplashScreen = () => {
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, user => {
+            console.log(user)
             const timer = setTimeout(() => {
                 if (user) {
                     navi.replace('Tab');
